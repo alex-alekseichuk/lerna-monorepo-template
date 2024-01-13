@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo/tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "monorepo-cli": "./bin/monorepo-cli.js",
+    "script1": "./bin/script1.js"
+  },
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "exec-sh": "^0.4.0",
+    "fs-extra": "^10.0.0",
+    "get-relative-path": "^1.0.2",
+    "glob": "^7.1.7",
+    "lodash": "^4.17.21",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2",
+    "yargs": "^17.1.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

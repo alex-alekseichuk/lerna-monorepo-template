@@ -1,0 +1,14 @@
+{
+  "name": "monorepo-template",
+  "private": true,
+  "scripts": {
+    "install": "lerna clean --no-private --yes && npm run bootstrap",
+    "bootstrap": "./bootstrap.sh",
+    "bootstrap:always": "lerna run bootstrap:always --no-private --stream --concurrency ${CONCURRENCY:-2} --include-dependencies",
+    "clean": "monorepo-cli package clean && lerna run clean --stream && lerna clean --no-private --yes"
+  },
+  "devDependencies": {
+    "@monorepo/tools": "file:./packages/tools",
+    "lerna": "^4.0.0"
+  }
+}
